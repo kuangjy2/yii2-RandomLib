@@ -1,0 +1,22 @@
+{
+    "name": "kuangjy/yii2-randomlib",
+    "description": "ircmaxell's RandomLib for yii2",
+    "type": "library",
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "ircmaxell/random-lib": "^1.2"
+    },
+	"autoload": {
+        "psr-4": {
+            "kuangjy\\RandomLib\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kuangjy2",
+            "email": "kuangjy@qq.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
