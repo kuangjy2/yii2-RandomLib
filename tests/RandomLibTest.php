@@ -30,5 +30,6 @@ class RandomLibTest extends TestCase
     {
         $number = $component->generateString(6, '0123456789');
         $this->assertRegExp('/\d+?/', $number);
+        $this->assertEquals(6, strlen($number));
     }
 }
