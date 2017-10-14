@@ -6,9 +6,13 @@
         "yiisoft/yii2": "~2.0.0",
         "ircmaxell/random-lib": "^1.2"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
+    },
 	"autoload": {
         "psr-4": {
-            "kuangjy\\RandomLib\\": "src/"
+            "kuangjy\\RandomLib\\": "src/",
+            "kuangjy\\RandomLib\\Test\\": "tests/"
         }
     },
     "license": "MIT",
