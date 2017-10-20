@@ -12,7 +12,7 @@
 	"autoload": {
         "psr-4": {
             "kuangjy\\RandomLib\\": "src/",
-            "kuangjy\\RandomLib\\Test\\": "tests/"
+            "kuangjy\\RandomLib\\Tests\\": "tests/"
         }
     },
     "license": "MIT",
