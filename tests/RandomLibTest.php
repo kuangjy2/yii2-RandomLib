@@ -9,7 +9,7 @@
 namespace kuangjy\RandomLib\Tests;
 
 use kuangjy\RandomLib\RandomLib;
-use PHPUnit\Framework\TestCase;
+use SecurityLib\Strength;
 
 
 class RandomLibTest extends TestCase
@@ -17,7 +17,7 @@ class RandomLibTest extends TestCase
 
     public function testNewComponent()
     {
-        $component = new RandomLib();
+        $component = new RandomLib(['strength' => Strength::MEDIUM]);
         $this->assertInstanceOf(RandomLib::class, $component);
 
         return $component;
@@ -25,6 +25,7 @@ class RandomLibTest extends TestCase
 
     /**
      * @depends testNewComponent
+     * @param $component
      */
     public function testGenerateNumber($component)
     {
